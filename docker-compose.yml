@@ -11,3 +11,6 @@ services:
     environment:
       # - PORT=7000
       # - NODE_ENV=production
+      # - IMAGE_GENERATOR_BASE_URL=
+      # - TIMEZONE_OFFSET_HOURS="-6" # Has default.
+      # - SOURCE_TIMEZONE_OFFSET_HOURS="-6" # Has default.
