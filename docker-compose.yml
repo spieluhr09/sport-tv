@@ -1,0 +1,16 @@
+services:
+  la12-addon:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: la12-addon:latest
+    container_name: la12-addon
+    restart: unless-stopped
+    ports:
+      - "7000:7000" 
+    environment:
+      # - PORT=7000
+      # - NODE_ENV=production
+      # - IMAGE_GENERATOR_BASE_URL=
+      # - TIMEZONE_OFFSET_HOURS="-6" # Has default.
+      # - SOURCE_TIMEZONE_OFFSET_HOURS="-6" # Has default.
